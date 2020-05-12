@@ -33,4 +33,5 @@ int main(int argc, char ** argv)
     glutDisplayFunc(display);
     myInit();
     glutMainLoop();
+    return 0;
 }
