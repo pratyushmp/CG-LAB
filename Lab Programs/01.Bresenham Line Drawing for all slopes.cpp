@@ -49,7 +49,7 @@ void draw_line(int x1, int x2, int y1, int y2)
     {
 
         draw_pixel(x, y);
-        pk = 2*(dy - dx);
+        pk = 2*dy - dx;
         inc1 = 2*(dy - dx);
         inc2 = 2*dy;
 
@@ -71,7 +71,7 @@ void draw_line(int x1, int x2, int y1, int y2)
     {
 
         draw_pixel(x, y);
-        pk = 2*(dx-dy);
+        pk = 2*dx - dy;
         inc1 = 2*(dx-dy);
         inc2 = 2*dx;
 
@@ -100,7 +100,7 @@ void myDisplay()
 int main(int argc, char** argv)
 {
     printf("Enter (x1, x2, y1, y2) \n");
-    scanf("%d %d %d %d", &x1, &x2, &y1, &y2);
+    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
